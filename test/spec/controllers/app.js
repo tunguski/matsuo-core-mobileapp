@@ -6,17 +6,30 @@ describe('Controller: AppCtrl', function () {
   beforeEach(module('mobileapp'));
 
   var AppCtrl,
-    scope;
+      scope,
+      $rootScope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, _$rootScope_) {
+    $rootScope = _$rootScope_;
     scope = $rootScope.$new();
     AppCtrl = $controller('AppCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(1).toBe(1);
+  it('config is defined', function () {
+    expect(angular.isDefined(scope.config)).toBe(true);
+  });
+
+  it('showMessage works', function () {
+    expect(angular.isDefined(scope.messageBox)).toBe(true);
+    expect(scope.messageBox.show).toBe(false);
+
+    $rootScope.showMessage('test', 'danger');
+
+    expect(scope.messageBox.text).toBe('test');
+    expect(scope.messageBox.class).toBe('bg-danger');
+    expect(scope.messageBox.show).toBe(true);
   });
 });
