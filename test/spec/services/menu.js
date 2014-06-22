@@ -14,8 +14,12 @@ describe('Service: menuService', function () {
     menuService = _menuService_;
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
+  it('all elements are defined', function () {
     expect(angular.isDefined(menuService.menuElementStyle)).toBe(true);
     expect(angular.isDefined(menuService.menu)).toBe(true);
+  });
+
+  it('menuElementStyle works', function () {
+    expect(menuService.menuElementStyle({ title: 'yyy'})).toBe('xxx-yyy');
   });
 });
