@@ -356,6 +356,22 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: false
       }
+    },
+
+    coveralls: {
+      options: {
+        debug: true,
+        coverage_dir: 'coverage/',
+        dryRun: false,
+        force: true,
+        recursive: true
+      }
+    },
+
+    release: {
+      options: {
+        npm: false
+      }
     }
   });
 
