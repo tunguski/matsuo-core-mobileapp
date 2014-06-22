@@ -8,5 +8,6 @@
  * Controller of the matsuoCoreMobileappApp
  */
 angular.module('mobileapp')
-    .controller('MenuCtrl', function ($scope, $rootScope, $location) {
+    .controller('MenuCtrl', function ($scope, menuService) {
+      $scope.menuService = menuService;
     });

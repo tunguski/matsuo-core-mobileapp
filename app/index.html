@@ -17,6 +17,10 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/snap.css">
+    <link rel="stylesheet" href="styles/normalGlass.css">
+    <link rel="stylesheet" href="styles/frostedGlass.css">
+    <link rel="stylesheet" href="styles/loadingSpinner.css">
     <!-- endbuild -->
   </head>
   <body ng-controller="AppCtrl" ng-class="config.backgroundImage ? 'app-style-' + config.backgroundImage : ''">
@@ -77,11 +81,11 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/mobileapp.js"></script>
+    <script src="scripts/services/menu.js"></script>
     <script src="scripts/controllers/app.js"></script>
     <script src="scripts/controllers/configuration.js"></script>
     <script src="scripts/controllers/menu.js"></script>
     <script src="scripts/controllers/reportBug.js"></script>
-
     <!-- endbuild -->
   </body>
 </html>

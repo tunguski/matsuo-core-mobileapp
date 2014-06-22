@@ -1,0 +1,22 @@
+
+body .snap-content {
+  color: #ddd;
+}
+
+.snap-content {
+  background-color: black;
+  z-index: 10;
+}
+
+.snap-drawer .menu-icon {
+  display: none;
+}
+
+.snap-drawer {
+  background-color: #222;
+}
+
+.snap-drawer a.list-group-item:first-child,
+.snap-drawer a.list-group-item:last-child {
+  border-radius: 0px;
+}

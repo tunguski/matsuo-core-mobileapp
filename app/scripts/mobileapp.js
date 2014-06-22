@@ -18,7 +18,8 @@ angular.module('mobileapp', ['ui.bootstrap', 'snap', 'mt.route', 'pascalprecht.t
       asButtons: true,
       language: 'pl',
       buttonStyle: 'glass',
-      backgroundImage: ''
+      backgroundImage: '',
+      productName: 'XYZ'
     })
 
     .config(function(snapRemoteProvider) {
