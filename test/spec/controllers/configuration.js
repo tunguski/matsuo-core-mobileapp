@@ -11,7 +11,7 @@ describe('Controller: ConfigurationCtrl', function () {
       $translate,
       appConfiguration;
 
-  var $translate_useExecutedProperly = false;
+  var $translateUseExecutedProperly = false;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, _$rootScope_, _appConfiguration_) {
@@ -20,7 +20,7 @@ describe('Controller: ConfigurationCtrl', function () {
     scope = $rootScope.$new();
     $translate = {
       use: function (val) {
-        $translate_useExecutedProperly = val == 'en';
+        $translateUseExecutedProperly = val === 'en';
       }
     };
 
@@ -36,6 +36,6 @@ describe('Controller: ConfigurationCtrl', function () {
 
     scope.$digest();
 
-    expect($translate_useExecutedProperly).toBe(true);
+    expect($translateUseExecutedProperly).toBe(true);
   });
 });
