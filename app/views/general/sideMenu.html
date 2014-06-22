@@ -1,0 +1,37 @@
+<ng-include src="'views/general/header.html'"></ng-include>
+
+<div class="list-group" ng-controller="MenuCtrl">
+  <span class="list-group-item title" translate="menu.functions.title"></span>
+
+  <a href="#/sensor/addSensor" ng-class="getLinkActiveGroup('/sensor/addSensor')" snap-close
+     class="list-group-item" translate="menu.functions.addSensor"></a>
+  <!--
+  <a href="#/sensor/repository" ng-class="getLinkActiveGroup('/sensor/repository')" snap-close
+     class="list-group-item" translate="menu.functions.searchRepo"></a>
+  -->
+  <a href="#/general/configuration" ng-class="getLinkActiveGroup('/general/configuration')" snap-close
+     class="list-group-item" translate="menu.functions.configuration"></a>
+
+  <span class="list-group-item title" translate="menu.groups.title">Groups</span>
+
+  <!-- ng-repeat po liście grup -->
+  <a ng-href="#/sensor/sensors?groupName={{ groupName.trim() }}" class="list-group-item" snap-close
+     ng-class="isActive(groupName) ? 'active' : ''"
+     ng-repeat="(groupName, group) in groups">
+    {{ groupName }}
+    <span class="badge">{{ group.length }}</span>
+    <!--
+    <span ng-show="group.warnings > 0" class="badge alert-warning">{{ group.warnings }}</span>
+    <span ng-show="group.criticals > 0" class="badge alert-danger">{{ group.criticals }}</span>
+    -->
+  </a>
+
+  <span class="list-group-item title" translate="menu.other.title">Other</span>
+
+  <a href="#/sensor/cookbook" ng-class="getLinkActiveGroup('/sensor/cookbook')" snap-close
+     class="list-group-item" translate="menu.other.cookbook">Cookbook</a>
+  <a href="#/general/about" ng-class="getLinkActiveGroup('/general/about')" snap-close
+     class="list-group-item" translate="menu.other.about">About Uxms</a>
+  <a href="#/general/reportBug" ng-class="getLinkActiveGroup('/general/reportBug')" snap-close
+     class="list-group-item" translate="menu.other.reportBug">Report a bug</a>
+</div>

@@ -1,0 +1,26 @@
+# generic (system) files/extensions we don't want
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+.idea/*
+*.iml
+*.DS_Store
+lib-cov
+pids
+logs
+results
+
+node_modules
+bower_components
+coverage
+
+# contains secret repo token
+.coveralls.yml
+
+dist
+.tmp
+.sass-cache
