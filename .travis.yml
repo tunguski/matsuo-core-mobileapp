@@ -6,7 +6,7 @@ before_script:
   - npm install --quiet -g grunt-cli karma
   - npm install
   - npm install -g bower
-  - bower install -f
+  - bower install -f --clean
 
 script: grunt default coveralls
 notifications:
