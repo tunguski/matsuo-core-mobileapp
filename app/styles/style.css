@@ -25,7 +25,7 @@ a.options {
 
 header.black {
   color: #333;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .bg {
@@ -46,14 +46,12 @@ body .form-control {
 }
 
 input.form-control, select.form-control {
-  -webkit-transition:all linear 0.5s;
   transition:all linear 0.5s;
 }
 
 input.ng-invalid, select.ng-invalid {
   border-color: #a94442;
   background-color: #602726;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
@@ -91,9 +89,6 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 
 .app-theme-background-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   color: white;
 }

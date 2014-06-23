@@ -18,5 +18,5 @@ body .snap-content {
 
 .snap-drawer a.list-group-item:first-child,
 .snap-drawer a.list-group-item:last-child {
-  border-radius: 0px;
+  border-radius: 0;
 }
