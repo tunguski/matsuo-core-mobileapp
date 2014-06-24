@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="styles/loadingSpinner.css">
     <!-- endbuild -->
   </head>
-  <body ng-controller="AppCtrl" ng-class="config.backgroundImage ? 'app-style-' + config.backgroundImage : ''">
+  <body ng-controller="AppCtrl"
+        ng-class="config.backgroundImage ? 'app-theme-background-image app-style-' + config.backgroundImage : ''">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->

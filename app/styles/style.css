@@ -88,7 +88,7 @@ a.list-group-item:hover, a.list-group-item:focus {
   background-color: #999;
 }
 
-.app-theme-background-image {
+.app-theme-background-image .snap-content {
   background-size: cover;
   color: white;
 }
