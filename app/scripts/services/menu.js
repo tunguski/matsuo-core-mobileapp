@@ -2,19 +2,18 @@
 
 /**
  * @ngdoc function
- * @name matsuoCoreMobileappApp.controller:MainCtrl
+ * @name mobileapp.service:menuService
  * @description
- * # MainCtrl
- * Controller of the matsuoCoreMobileappApp
+ * # menuService
+ * Controller of the mobileapp
  */
 angular.module('mobileapp')
-    .service('menuService', function ($location) {
+    .service('menuService', function () {
       var menuService = {
         menuElementStyle: function (menuElement) {
         return 'xxx-' + menuElement.title;
       },
-      menu: [
-        {
+      menu: [{
           title: 't.a',
           elements: [
             { title: 'a.a', href: '#/test/show1' },
@@ -36,8 +35,7 @@ angular.module('mobileapp')
             { title: 'a.c', href: '#/test/show9' }
           ]
         }
-      ]
-      };
+      ]};
 
       return menuService;
     });

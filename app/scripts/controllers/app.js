@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name matsuoCoreMobileappApp.controller:AboutCtrl
+ * @name mobileapp.controller:AppCtrl
  * @description
- * # AboutCtrl
- * Controller of the matsuoCoreMobileappApp
+ * # AppCtrl
+ * Controller of the mobileapp
  */
 angular.module('mobileapp')
     .controller('AppCtrl', function ($scope, $rootScope, appConfiguration) {

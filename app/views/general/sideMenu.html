@@ -4,7 +4,7 @@
   <span ng-repeat="menuGroup in menuService.menu">
     <span class="list-group-item title" translate="{{menuGroup.title}}"></span>
 
-    <a href="#/sensor/addSensor" ng-class="menuElementStyle(menuElement)" snap-close
+    <a href="menuElement.href" ng-class="menuService.menuElementStyle(menuElement)" snap-close
        class="list-group-item" translate="{{menuElement.title}}"
        ng-repeat="menuElement in menuGroup.elements"></a>
   </span>

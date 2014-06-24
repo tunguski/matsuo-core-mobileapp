@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name matsuoCoreMobileappApp.controller:MainCtrl
+ * @name mobileapp.controller:MenuCtrl
  * @description
- * # MainCtrl
- * Controller of the matsuoCoreMobileappApp
+ * # MenuCtrl
+ * Controller of the mobileapp
  */
 angular.module('mobileapp')
     .controller('MenuCtrl', function ($scope, menuService) {

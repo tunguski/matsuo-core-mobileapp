@@ -1,0 +1,35 @@
+
+.sensor-box {
+  min-width: 100px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.center-sensors {
+  margin: auto;
+  text-align: center;
+}
+
+.sensor-container table.table {
+  text-align: left;
+  width: auto;
+  margin: auto;
+}
+
+.sensor-container table.table tr.bg-danger {
+  background: rgba(0, 255, 255, 0.2);
+}
+
+.sensor-container table.table tr.bg-warning {
+  background: rgba(252, 248, 227, 0.2);
+}
+
+.sensor-container table.table th {
+  border-top-color: black;
+  color: white;
+}
+
+.sensor-container table.table > tbody > tr > td {
+  border-top-color: #444;
+  color: #999;
+}
