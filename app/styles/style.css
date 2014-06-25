@@ -96,3 +96,14 @@ body.app-theme-background-image .snap-content {
 body.app-theme-background-image header {
   background-color: transparent;
 }
+
+.message-box p {
+  margin: 0px;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.message-box:hover p {
+  max-height: 200px;
+  overflow-y: auto;
+}

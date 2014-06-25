@@ -34,7 +34,9 @@
     <snap-content>
       <ng-include src="'views/general/header.html'"></ng-include>
 
-      <p class="bg" ng-class="messageBox.class">{{messageBox.text}}</p>
+      <div class="message-box bg" ng-class="messageBox.class" ng-show="messageBox.show">
+        <p>{{messageBox.text}}</p>
+      </div>
 
       <ng-view></ng-view>
     </snap-content>
