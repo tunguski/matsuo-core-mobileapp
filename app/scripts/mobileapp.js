@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mobileapp', ['ui.bootstrap', 'snap', 'mt.route', 'pascalprecht.translate'])
+angular.module('mobileapp', ['mt.ui', 'snap'])
     .config(function($translateProvider) {
       //$translateProvider.useStaticFilesLoader({ prefix: 'i18n/locale-', suffix: '.json' });
       $translateProvider.preferredLanguage('pl');

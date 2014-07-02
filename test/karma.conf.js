@@ -17,6 +17,7 @@ module.exports = function(config) {
     files: [
       'bower_components/jquery/dist/jquery.js',
       'bower_components/underscore/underscore.js',
+      'bower_components/select2/select2.js',
       'bower_components/moment/moment.js',
       'bower_components/moment/lang/pl.js',
 
@@ -28,11 +29,21 @@ module.exports = function(config) {
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/snapjs/snap.js',
       'bower_components/angular-snap/angular-snap.js',
+      'bower_components/angular-ui-select2/src/select2.js',
 
       'bower_components/matsuo-js-util/matsuo-js-util.js',
       'bower_components/matsuo-ng-route/matsuo-ng-route.js',
+      'bower_components/matsuo-ng-resource/matsuo-ng-resource.js',
 
-      'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/matsuo-ng-ui/app/scripts/mt.ui/ui.js',
+      'bower_components/matsuo-ng-ui/app/scripts/mt.ui/*.js',
+      'bower_components/matsuo-ng-ui/app/scripts/mt.ui/**/*.js',
+ 
+      'bower_components/matsuo-core-webapp/app/scripts/webapp.js',
+      'bower_components/matsuo-core-webapp/app/scripts/base/*.js',
+      'bower_components/matsuo-core-webapp/app/scripts/base/**/*.js',
+
+     'bower_components/angular-mocks/angular-mocks.js',
 
       'app/scripts/*.js',
       'app/scripts/**/*.js',
