@@ -10,7 +10,7 @@
     "angular-snap": "~1.5.0",
     "angular-translate": "~2.2.0",
     "angular-translate-loader-static-files": "~2.2.0",
-    "matsuo-ng-route": ">=0.1.0",
+    "matsuo-ng-ui": ">=0.1.0",
     "underscore": "~1.6.0",
     "toastr": "~2.0.3",
     "json3": "~3.3.1",
