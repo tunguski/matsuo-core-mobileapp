@@ -1,20 +1,28 @@
 {
   "name": "matsuo-core-mobileapp",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "authors": [
+    "Marek Romanowski <marek.romanowski@gmail.com>"
+  ],
+  "description": "Matsuo IT base mobile app",
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "sample"
+  ],
   "dependencies": {
-    "angular": ">=1.3.0-beta.14",
-    "angular-sanitize": ">=1.3.0-beta.14",
-    "angular-resource": ">=1.3.0-beta.14",
-    "angular-touch": ">=1.3.0-beta.14",
-    "angular-bootstrap": "~0.11.0",
     "angular-snap": "~1.5.0",
-    "angular-translate": "~2.2.0",
-    "angular-translate-loader-static-files": "~2.2.0",
     "matsuo-ng-ui": ">=0.1.0",
-    "underscore": "~1.6.0",
-    "toastr": "~2.0.3",
     "json3": "~3.3.1",
-    "es5-shim": "~3.1.0"
+    "es5-shim": "~3.1.0",
+    "anvde": "~0.0.8"
   },
   "devDependencies": {
     "angular-mocks": ">=1.3.0-beta.14"

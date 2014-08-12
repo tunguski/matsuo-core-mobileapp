@@ -26,7 +26,7 @@ module.exports = function(config) {
       'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-translate/angular-translate.js',
-      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+      'bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js',
       'bower_components/snapjs/snap.js',
       'bower_components/angular-snap/angular-snap.js',
       'bower_components/angular-ui-select2/src/select2.js',
