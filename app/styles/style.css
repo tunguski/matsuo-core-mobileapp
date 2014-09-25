@@ -56,8 +56,13 @@ input.ng-invalid, select.ng-invalid {
 }
 
 form {
-  max-width: 95%;
+  /*max-width: 95%;*/
   margin: auto;
+}
+
+form.sideMargins {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 tr.number, td.number {
